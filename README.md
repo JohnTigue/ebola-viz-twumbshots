@@ -12,3 +12,13 @@ There seems to be no real definitional distinction between [thumbnails v. thumbs
 Personally, to choose between the two? `thumbshots`. Really, I don't like either but they are both `thumb-things`. 
 
 So, these `thumb-things` are intented to be used in the context of Twitter feeds and the subsequent blog posts that Twitter will link through to, so these are `Twit-things` and well as `thumb-things`. `Twitter + thumbs = twumbs`. So, `twumbshots` it is, which is pretty rare on the Web [(31 hits on 2014-11-22 as I write this)](https://www.google.com/search?q=twumbshots&oq=twumbshots#q=twumbshots). The domain is available if you are into that sort of thing.
+
+## Dimensions of images
+- https://dev.twitter.com/cards/types/photo
+	- Web: maximum height of 375px, maximum width of 435px
+  - Mobile (non-retina displays): maximum height of 375px, maximum width of 280px
+  - Mobile (retina displays): maximum height of 750px, maximum width of 560px
+         
+So, mobile is 280x375 (or double that) and web is 435x375 yet they maintain aspect ratio on resize... If only one aspect ratio (I do not want to deal with resizing) then mobile I guess and go big. So all images will have height=750px, width=560px and weigh in at less than a megabyte.
+
+
