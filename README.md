@@ -15,10 +15,11 @@ So, these `thumb-things` are intented to be used in the context of Twitter feeds
 
 ## Dimensions of images
 - https://dev.twitter.com/cards/types/photo
-	- Web: maximum height of 375px, maximum width of 435px
+  - Web: maximum height of 375px, maximum width of 435px
   - Mobile (non-retina displays): maximum height of 375px, maximum width of 280px
   - Mobile (retina displays): maximum height of 750px, maximum width of 560px
          
-So, mobile is 280x375 (or double that) and web is 435x375 yet they maintain aspect ratio on resize... If only one aspect ratio (I do not want to deal with resizing) then mobile I guess and go big. So all images will have height=750px, width=560px and weigh in at less than a megabyte.
+So, mobile is 280x375 (or double that) and web is 435x375 yet they maintain aspect ratio on resize... If only one aspect ratio (
+I do not want to deal with resizing so I'll just go with one size and make it a golden ratio. Settled on 750 wide by 464 high. All files weigh in at less than a megabyte which is a Twitter card image requirement.
 
 
